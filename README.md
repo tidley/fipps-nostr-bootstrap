@@ -23,3 +23,17 @@ Nostr is used as a **bootstrap/signalling layer only** for FIPPS peers.
 npm install
 npm run build
 ```
+
+## Demo commands
+
+```bash
+npm run demo:preflight
+npm run demo:happy
+npm run demo:failures
+```
+
+These provide deterministic, presentation-ready output for:
+- happy path establishment
+- expired event rejection
+- replay detection
+- retry success with fresh session

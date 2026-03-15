@@ -6,7 +6,10 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "demo:preflight": "npm run build && node scripts/demo.mjs preflight",
+    "demo:happy": "npm run build && node scripts/demo.mjs happy",
+    "demo:failures": "npm run build && node scripts/demo.mjs failures"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
